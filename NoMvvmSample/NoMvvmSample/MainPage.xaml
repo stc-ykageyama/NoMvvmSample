@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="NoMvvmSample.MainPage">
+
+    <StackLayout >
+        <Label Text="MVVMを使用しないサンプル" 
+               FontSize="Large"
+               TextColor="White"
+               BackgroundColor="DarkBlue"
+               HorizontalTextAlignment="Center" />
+        <Label x:Name="counter" 
+               Text="0" 
+               TextColor="Red" 
+               FontSize="Medium" 
+               HorizontalTextAlignment="Center" />
+        <Button Text="-1" 
+                Clicked="ButtonDecrement_Clicked" />
+        <Button Text="+1" 
+                Clicked="ButtonIncrement_Clicked" />
+    </StackLayout>
+
+</ContentPage>
